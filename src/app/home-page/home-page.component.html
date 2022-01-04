@@ -1,0 +1,63 @@
+<body>
+    <div class="container">
+    <div class="col-lg-8 col-sm-5 col-ex-12">
+
+      
+        <div class="logo">
+        <img src="/assets/images/logo.png" height="60px" width="80px" alt="fast-trade">
+    </div>
+
+    <h1><strong>Fast Trade</strong> 
+   
+    </h1>
+      
+  </div>
+   
+</div>
+    <br><br>
+    <table  class = "home" border="1">
+    <tbody style="width: 40%;">
+    <tr>
+    <th style="font-size: larger;color: black;background-color:rgb(184, 182, 182);">Stock Symbol</th>
+    <th style="font-size: larger;color: black;background-color: rgb(184, 182, 182);text-align: right;">Current Price (₹)</th>
+    </tr>
+    
+
+    
+    <tr>
+        <td (click)="getDetails(symbol[0])" style="font-weight: bold;text-align: left;">{{symbol[0]}}</td>
+        <td >{{price[0]}}</td>
+        </tr>
+        <tr>
+         <td (click)="getDetails(symbol[1])" style="font-weight: bold;text-align: left;">{{symbol[1]}}</td>
+         <td >{{price[1]}}</td>
+         <tr>
+    
+      <tr>
+        <td (click)="getDetails(symbol[2])" style="font-weight: bold;text-align: left;">{{symbol[2]}}</td>
+        <td >{{price[2]}}</td>
+        </tr>
+    
+        <tr >
+            <td (click)="getDetails(symbol[3])" style="font-weight: bold;text-align: left;">{{symbol[3]}}</td>
+            <td >{{price[3]}}</td>
+            </tr>
+       
+            <tr >
+                <td (click)="getDetails(symbol[4])" style="font-weight: bold;text-align: left;">{{symbol[4]}}</td>
+                <td >{{price[4]}}</td>
+             </tr>
+
+
+             <tr *ngFor="let elements of symbol1  ; let i = index " >
+        <td (click)="getDetails(symbol[i])" style="font-weight: bold;text-align: left;">{{symbol1[i]}}</td>
+        <td >{{price1[i]}}</td>
+    </tr>
+           
+   
+   
+ </tbody>
+    </table>
+   
+  </body>
+  
